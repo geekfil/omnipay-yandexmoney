@@ -44,19 +44,17 @@
             "homepage": "http://hiqdev.com/"
         }
     ],
+
     "require": {
-        "omnipay/common": "~2.3"
+        "omnipay/common": "v3.0-alpha.2"
     },
     "require-dev": {
-        "omnipay/tests": "^2.1.1",
-        "hiqdev/hidev-hiqdev": "dev-master",
-        "hiqdev/hidev-php": "dev-master"
+        "omnipay/tests": "~3.0"
     },
+
     "autoload": {
         "psr-4": {
-            "Omnipay\\YandexMoney\\": "src",
-            "Omnipay\\YandexMoney\\Tests\\": "tests",
-            "Omnipay\\YandexMoney\\Tests\\Stubs\\": "tests/stubs"
+            "Omnipay\\YandexMoney\\": "src"
         }
     }
 }

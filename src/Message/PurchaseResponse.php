@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace Omnipay\YandexMoney\Message\p2p;
+namespace Omnipay\YandexMoney\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;

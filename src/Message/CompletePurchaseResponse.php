@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace Omnipay\YandexMoney\Message\p2p;
+namespace Omnipay\YandexMoney\Message;
 
 use Omnipay\Common\Exception\InvalidResponseException;
 use Omnipay\Common\Message\AbstractResponse;
@@ -24,6 +24,12 @@ class CompletePurchaseResponse extends AbstractResponse
      */
     public $request;
 
+    /**
+     * CompletePurchaseResponse constructor.
+     * @param RequestInterface $request
+     * @param $data
+     * @throws InvalidResponseException
+     */
     public function __construct(RequestInterface $request, $data)
     {
         parent::__construct($request, $data);

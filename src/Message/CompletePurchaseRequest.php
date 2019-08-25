@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace Omnipay\YandexMoney\Message\p2p;
+namespace Omnipay\YandexMoney\Message;
 
 /**
  * YandexMoney Authorize Request
@@ -22,6 +22,11 @@ class CompletePurchaseRequest extends AbstractRequest
         return $this->httpRequest->request->all();
     }
 
+    /**
+     * @param mixed $data
+     * @return \Omnipay\Common\Message\ResponseInterface|CompletePurchaseResponse
+     * @throws \Omnipay\Common\Exception\InvalidResponseException
+     */
     public function sendData($data)
     {
         return $this->response = new CompletePurchaseResponse($this, $data);
