@@ -10,11 +10,17 @@
 
 namespace Omnipay\YandexMoney\Message;
 
+use Omnipay\Common\Exception\InvalidResponseException;
+use Omnipay\Common\Message\ResponseInterface;
+
 /**
  * YandexMoney Authorize Request
  */
 class CompletePurchaseRequest extends AbstractRequest
 {
+    /**
+     * @return mixed
+     */
     public function getData()
     {
         $this->validate('password');
@@ -23,9 +29,8 @@ class CompletePurchaseRequest extends AbstractRequest
     }
 
     /**
-     * @param mixed $data
-     * @return \Omnipay\Common\Message\ResponseInterface|CompletePurchaseResponse
-     * @throws \Omnipay\Common\Exception\InvalidResponseException
+     * @param $data
+     * @return CompletePurchaseResponse
      */
     public function sendData($data)
     {

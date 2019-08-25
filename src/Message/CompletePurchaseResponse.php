@@ -24,13 +24,8 @@ class CompletePurchaseResponse extends AbstractResponse
      */
     public $request;
 
-    /**
-     * CompletePurchaseResponse constructor.
-     * @param RequestInterface $request
-     * @param $data
-     * @throws InvalidResponseException
-     */
-    public function __construct(RequestInterface $request, $data)
+
+    public function __construct(CompletePurchaseRequest $request, $data)
     {
         parent::__construct($request, $data);
 
