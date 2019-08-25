@@ -1,5 +1,5 @@
 {
-    "name": "hiqdev/omnipay-yandexmoney",
+    "name": "geekfil/omnipay-yandexmoney",
     "type": "library",
     "description": "Yandex.Money driver for Omnipay PHP payment library",
     "keywords": [
